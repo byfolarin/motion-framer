@@ -1,6 +1,7 @@
 import './App.css'
 import BasicsOfMotion from './Components/BasicsOfMotion'
 import Gestures from './Components/Gestures'
+import AnimationControls from './Components/AnimationControls'
 
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
   return (
     <>
       {/* <BasicsOfMotion /> */}
-      <Gestures />
+      {/* <Gestures /> */}
+      <AnimationControls />
     </>
   )
 }
