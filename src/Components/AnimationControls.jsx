@@ -3,10 +3,10 @@ import React from 'react'
 
 const AnimationControls = () => {
 
-        const controls = useAnimationControls();
+     const controls = useAnimationControls();
 
     const handleClick =()=>{
-        controls.start('flip')
+        controls.start("flip")
     }
 
 
@@ -29,7 +29,7 @@ const AnimationControls = () => {
                 rotate: '360deg'
             }
         }}
-        initial = 'flip'
+        initial = "flip"
         animate = {controls}
         className='w-[150px] h-[150px] bg-black'>
             
