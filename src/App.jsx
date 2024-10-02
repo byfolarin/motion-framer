@@ -1,11 +1,12 @@
 import './App.css'
+import BasicsOfMotion from './Components/BasicsOfMotion'
 
 function App() {
 
 
   return (
     <>
-      Hello World
+      <BasicsOfMotion />
     </>
   )
 }
