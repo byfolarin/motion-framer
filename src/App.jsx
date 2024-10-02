@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <BasicsOfMotion />
+      {/* <BasicsOfMotion /> */}
       <Gestures />
     </>
   )
