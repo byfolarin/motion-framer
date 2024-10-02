@@ -13,26 +13,17 @@ const AnimationControls = () => {
   return (
     <div className="grid place-content-center h-[100vh] gap-[0.8rem]">
      
-
-
         <button 
-        onClick={handleClick}
-        className='example-button'>Flip it!</button>
+            onClick={handleClick}
+            className='example-button'>Flip it!
+        </button>
 
         <motion.div 
-        variants={{
-            initial: {
-                rotate: '0deg'
-            },
-
-            flip :{
-                rotate: '360deg'
-            }
-        }}
-        initial = "flip"
-        animate = {controls}
-        className='w-[150px] h-[150px] bg-black'>
-            
+                variants={{initial: {rotate: '0deg'},
+                           flip:{rotate: '75deg'}}}
+                initial = "initial"
+                animate = {controls}
+                className='w-[150px] h-[150px] bg-black'>          
         </motion.div>
 
     </div>
