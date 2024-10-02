@@ -1,5 +1,6 @@
 import './App.css'
 import BasicsOfMotion from './Components/BasicsOfMotion'
+import Gestures from './Components/Gestures'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <BasicsOfMotion />
+      <Gestures />
     </>
   )
 }
