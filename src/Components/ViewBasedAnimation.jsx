@@ -1,10 +1,15 @@
 import { motion, useInView } from 'framer-motion'
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 
 const ViewBasedAnimation = () => {
 
     const ref = useRef(null)
     const isInView = useInView(ref)
+
+
+    useEffect(()=>{
+        console.log('isInview', isInView)
+    },[isInView])
 
 
   return (
@@ -23,10 +28,11 @@ const ViewBasedAnimation = () => {
         </motion.div>
 
         <div
+        ref={ref}
         className='h-[100vh] bg-red-500'
         transition = '1s background'
         
-        ref={ref}
+        
         />
     </div>
   )
