@@ -1,10 +1,10 @@
-import { motion, useInView } from 'framer-motion'
+import { easeInOut, motion, useInView } from 'framer-motion'
 import React, { useEffect, useRef } from 'react'
 
 const ViewBasedAnimation = () => {
 
     const ref = useRef(null)
-    const isInView = useInView(ref)
+    const isInView = useInView(ref,{once: true})
 
 
     useEffect(()=>{
@@ -29,8 +29,11 @@ const ViewBasedAnimation = () => {
 
         <div
         ref={ref}
-        className={`h-[100vh] ${isInView ? "bg-red-500" : "bg-blue-500"}`}
-        transition = '1s background'
+        className={`h-[100vh] ${isInView ? "bg-blue-500" : "bg-red-500"}`}
+         transition={{
+            duration: 1,
+            ease: easeInOut
+          }}
         
         
         />
