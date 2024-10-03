@@ -29,7 +29,7 @@ const ViewBasedAnimation = () => {
 
         <div
         ref={ref}
-        className='h-[100vh] bg-red-500'
+        className={`h-[100vh] ${isInView ? "bg-red-500" : "bg-blue-500"}`}
         transition = '1s background'
         
         
