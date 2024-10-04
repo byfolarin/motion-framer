@@ -1,9 +1,19 @@
+import { useScroll,motion  } from 'framer-motion'
 import React from 'react'
 
 const ScrollAnimations = () => {
+    
+    const {scrollYProgress} = useScroll()
+
   return (
+    
+    
 
     <div>
+        <motion.div
+        className='sticky origin-left top-0 w-full h-[20px] bg-blue-500'
+        />
+
         <div className='max-w-[700px] m-auto p-[1.2rem]'>
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
