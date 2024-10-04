@@ -4,9 +4,7 @@ import React, { useState } from 'react'
 
 const TextBased = () => {
 
-    const {scrollYProgress} = useScroll()
-
-    const [isVisible, setIsVisible] = useState(true)
+const [isVisible, setIsVisible] = useState(true)
 
   return (
     <div className='grid place-content-center h-[100vh] gap-[0.8rem]'>
