@@ -11,8 +11,9 @@ const ScrollAnimations = () => {
 
     <div>
         <motion.div
-        className='sticky origin-left top-0 w-full h-[20px] bg-blue-500'
-        />
+          style={{ scaleX: scrollYProgress }}
+          className="sticky top-0 w-full h-[20px] bg-blue-500 origin-left"
+            />
 
         <div className='max-w-[700px] m-auto p-[1.2rem]'>
         <p>
