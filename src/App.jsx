@@ -4,6 +4,7 @@ import Gestures from './Components/Gestures'
 import AnimationControls from './Components/AnimationControls'
 import ViewBasedAnimation from './Components/ViewBasedAnimation'
 import ScrollAnimations from './Components/ScrollAnimations'
+import TextBased from './Components/TextBased'
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
       {/* <Gestures /> */}
       {/* <AnimationControls /> */}
       {/* <ViewBasedAnimation /> */}
-      <ScrollAnimations />
+      {/* <ScrollAnimations /> */}
+      <TextBased />
     </>
   )
 }
