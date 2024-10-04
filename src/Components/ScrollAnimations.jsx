@@ -2,7 +2,7 @@ import React from 'react'
 
 const ScrollAnimations = () => {
   return (
-    <div>
+    <div className='max-w-[700px] m-auto p-[1.2rem]'>
       <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industrys standard dummy text ever
